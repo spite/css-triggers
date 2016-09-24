@@ -37,6 +37,14 @@ function extractCSSAttributes( element ) {
 
 }
 
+/*
+var observer = new MutationObserver( function( mutations ){ console.log( mutations ); } );
+observer.observe(document, {
+    childList: true, subtree: true, attributes:    true,
+    attributeFilter: ["style"]
+});
+*/
+
 var defaultValues = new Map();
 var frame = document.createElement( 'iframe' );
 frame.style.display = 'none';
