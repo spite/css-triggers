@@ -67,6 +67,7 @@ function update() {
 				var defaultStyle = defaultValues.get( result.element );
 				if( !defaultStyle ) {
 					var el = document.createElement( result.element );
+					if( result.element === 'A' ) el.setAttribute( 'href', '#' );
 					frame.contentWindow.document.body.appendChild( el );
 					defaultStyle = extractCSSAttributes( el ).values;
 					defaultValues.set( result.element, defaultStyle );
