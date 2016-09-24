@@ -85,7 +85,7 @@ function update() {
 						if( initial || change ) {
 							res += `<p><b>${property}</b><br/>${value} (<i>${defaultValue}</i>)</p>`;
 						} else {
-							res += '<p>No info available</p>'
+							//res += '<p>No info available </p>'
 						}
 						if( initial ) {
 							res += `<p>Initial: ${parseTriggers( initial )}`
