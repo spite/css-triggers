@@ -23,7 +23,6 @@ chrome.devtools.panels.elements.onSelectionChanged.addListener(function(){
 
 function extractCSSAttributes( element ) {
 
-	var s = '';
 	var computedStyles = getComputedStyle( element );
 	var values = {};
 	for( var j = 0; j < computedStyles.length; j++ ) {
