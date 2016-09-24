@@ -70,6 +70,7 @@ function update() {
 					frame.contentWindow.document.body.appendChild( el );
 					defaultStyle = extractCSSAttributes( el ).values;
 					defaultValues.set( result.element, defaultStyle );
+					frame.contentWindow.document.body.removeChild( el );
 				}
 
 				Object.keys( result.values ).forEach( property => {
